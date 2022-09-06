@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="./media/newlogo2.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> tourism.Q8</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    
+    }
+  </style>
+
+  <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+
+  <div id="top" class="nav">
+
+    <a class="nav-link hvr-grow" href="#input">Create your itinerary </a>
+    <a class="nav-link hvr-grow" href="./index.html" target="_blank">Explore places</a>
+    <a class="nav-link hvr-grow" href="#contactus">Contact us</a>
+    <img id="imgbback" src="./media/newlogo2.png" alt="">
+
+
+  </div>
+  <br><br><br><br><br><br>
+
+  <div id="table">
+
+    <h2 id="how">How many days you will stay?</h2>
+
+    <input type="number" id="input" placeholder="write here"> <br>
+
+    <p class="min">(minimum 3 and maximum 10 days)</p>
+
+    <button onclick="go()" class="button hvr-bounce-out " id="create"> create your itinerary now! </button>
+    
+    <div id="result">
+      
+    </div>
+
+
+  </div>
+
+  <div id="contactus" class="enter-plc">
+
+
+    <form action="https://formsubmit.co/mounirsamsam31@gmail.com" method="post">
+
+
+      <h1> Send your feedback <br>
+      </h1>
+      <br><br><br><br><br>
+
+      <div class="field name-box">
+        <input type="text" name="Name" id="name" class="input" placeholder=" Your name" required />
+
+      </div>
+
+      <div class="field email-box">
+
+        <input type="text" id="email" name="email" class="input" placeholder="Your email" required />
+
+      </div>
+
+      <div class="field msg-box">
+        <input type="text" id="message" name="msg" class="input" placeholder="Your message "></input>
+
+      </div>
+
+      <input id="send" type="submit" value="Send" class="button hvr-bounce-out" />
+
+      <input type="hidden" name="_url" value="https://yourdomain.co/contact.html">
+    </form>
+
+
+  </div>
+  <script src="./main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+try{
+uv_f("fps");
+
+var uv_fE=function(a,b){this.H=[];for(var c=0;c<b.length;++c)this.H.push(new uv_H(b[c]));0==this.H.length&&this.H.push(new uv_H("//lh5.ggpht.com/"));this.N=a};
+uv_fE.prototype.getTile=function(a,b,c,d,e,f,g){var h=a.getContent().Qa();a=uv_vd(h);"fife:"==a.substr(0,5)&&(a=a.substr(5));uv_Sy(a)||(0==a.indexOf("fife|")?a=a.substr(5):(b=this.H[(b+c)%this.H.length],c=uv_u(h.Ka()),uv_o(c.Gb(),0)?(a=uv_t(c.Gb(),0),a=uv_ae(a,"//")?"https:"+a:uv_ae(a,"/")?b.toString()+a.substr(1):a):(h=uv_ZC(h),b=b.toString(),10==h&&(b+="p/"),b+=a,3==h&&(b+="/photo"),a=(new uv_Oy).parse(b).Xd()?b:"")));a&&(d=uv_O(d,0,uv_pta.length-1),a=new uv_Ry(a),a.setSize(uv_pta[d]),a=a.Hg());
+return this.N.H(a,f.callback(e,"fife-get-tile"),g)};uv_fE.prototype.setConfig=function(){};var uv_pta=[512,1024,1536];
+uv_V("FPS",function(a,b,c,d){b=new uv_fE(c,d);a(b)});
+
+uv_g();
+
+}catch(e){_DumpException(e)}
+// Google Inc.
